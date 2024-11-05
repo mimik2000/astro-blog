@@ -2,7 +2,7 @@
   // Type GetStaticPaths de Astro
   import MainLayout from '../../layouts/MainLayout.astro';
   import TypedBlogPost from "../../components/TypedBlogPost.astro";
-  import { GetStaticPaths } from 'astro';
+  import type { GetStaticPaths } from 'astro';
   import { getCollection } from 'astro:content';
 
 export const getStaticPaths = (async ({paginate}) => {
